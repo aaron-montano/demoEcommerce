@@ -2,25 +2,10 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import { productGetters, manufacturerGetters } from './getters';
-import { productMutations, cartMutations, manufacturerMutations } from './mutations';
+import { productMutations, cartMutations, manufacturerMutations /*, userMutations*/} from './mutations';
 import { productActions, manufacturerActions } from './actions';
 
 Vue.use(Vuex);
-
-const manufacturers = [
-  {
-    id: 1,
-    name: 'Apple'
-  },
-  {
-    id: 2,
-    name: 'Sony'
-  },
-  {
-    id: 3,
-    name: 'Samsung'
-  }
-]
 
 export default new Vuex.Store({
   strict: true,
@@ -30,8 +15,9 @@ export default new Vuex.Store({
     product: {},
     products: [],
     manufacturers: [],
+    currentUser: null,
   },
-  mutations: Object.assign({}, productMutations, cartMutations, manufacturerMutations),
+  mutations: Object.assign({}, productMutations, cartMutations, manufacturerMutations/*, userMutations*/),
   getters: Object.assign({}, productGetters, manufacturerGetters),
   actions: Object.assign({}, productActions, manufacturerActions),
 });

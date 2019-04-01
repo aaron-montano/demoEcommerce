@@ -3,7 +3,7 @@
 <template>
   <div>
     <div class="title">
-      <h1><i class="fa fa-braille"></i>Whaaaat, no money for bike?</h1>
+      <h1>Whaaaat, no <i class="fa fa-money"></i> for <i class="fa fa-bicycle"></i> ?</h1>
     </div>
     <product-list></product-list>
   </div>
@@ -22,9 +22,4 @@
       'product-list': ProductList
     }
   }
-
 </script>
-
-<style scoped>
-
-</style>

@@ -89,3 +89,15 @@ export const manufacturerActions = {
     })
   }
 }
+
+export const userActions = {
+  login(context, credentials) {
+    axios.post(`${API_BASE}/users/${credentials}`, credentials)
+      .then((user) => {
+      context.commit('setCurrentUser', user);
+    })
+    .catch((error) => {
+      console.log("incorrect login details");
+    });
+  }
+};

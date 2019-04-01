@@ -69,7 +69,7 @@ export const productMutations = {
     console.debug('index', index)
     state.products.splice(index, 1)
   }
-}
+};
 
 export const cartMutations = {
   [ADD_TO_CART]: (state, payload) => state.cart.push(payload),
@@ -78,7 +78,7 @@ export const cartMutations = {
     state.cart.splice(index, 1)
     console.log(state.cart, state.cart.length, index)
   }
-}
+};
 
 export const manufacturerMutations = {
   [ALL_MANUFACTURERS] (state) {
@@ -88,4 +88,10 @@ export const manufacturerMutations = {
     state.showLoader = false
     state.manufacturers = payload
   }
-}
+};
+
+// export const userMutations = {
+//   setCurrentUser(state, user) {
+//     state.currentuser = user;
+//   }
+// };

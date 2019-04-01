@@ -7,7 +7,7 @@
       <product-details :product="product" :key="product.id" ></product-details>
     </template>
   </div>
-  <div v-else class="title"><h1><i class="fa fa-superpowers"></i> Your Cart is Empty</h1></div>
+  <div v-else class="title"><h1> Whaaaat, no <i class="fa fa-shopping-cart"></i> for <i class="fa fa-bicycle"></i> ?</h1></div>
 </template>
 
 <script>

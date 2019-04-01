@@ -2,6 +2,7 @@
 <template>
   <div>
     <product-details :product="product" :isAdding="true" ></product-details>
+    <router-link to="../"><button class='button'>&nbsp;&nbsp;&nbsp;&nbsp;<i class='fa fa-arrow-left'></i>&nbsp;&nbsp;&nbsp;&nbsp;</button></router-link>
   </div>
 
 </template>

@@ -16,8 +16,8 @@
               <td>{{product.name}}</td>
               <td>${{product.price}}</td>
               <td>{{product.manufacturer}}</td>
-              <td><router-link :to="'/admin/edit/'+product._id"><button>edit</button></router-link></td>
-              <td><a @click="deleteProduct(product._id)" ><button>delete</button></a></td>
+              <td><router-link :to="'/admin/edit/'+product._id"><i class='fa fa-pencil'></i></router-link></td>
+              <td><a @click="deleteProduct(product._id)" ><i class='fa fa-trash'></i></a></td>
             </tr>
             </tbody>
           </table>
